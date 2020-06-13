@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import SearchMovies from "./components/SearchMovies";
-import "../css/styles.css";
+// import "../css/styles.css";
 import Card from "./components/Card";
 class Main extends React.Component {
     constructor(props) {

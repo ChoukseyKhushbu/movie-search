@@ -1,11 +1,10 @@
 const webpack = require('webpack')
 var path = require('path');
 const config = {
-	entry: path.resolve(__dirname, 'src') + '/app/index.js',
+	entry: path.resolve(__dirname, 'src') + '/index.js',
 	output: {
-		path: path.resolve(__dirname, 'dist') + '/app',
+		path: path.resolve(__dirname) + '/app',
 		filename: 'bundle.js',
-		publicPath: '/app/'
 	},
 	resolve: {
 		extensions: ['.js', '.jsx', '.css']
@@ -21,7 +20,7 @@ const config = {
 			},
 			{
 				test: /\.css$/,
-				loader: 'style-loader!css-loader'
+				loader: ['style-loader', 'css-loader']
 			}
 		]
 	}
